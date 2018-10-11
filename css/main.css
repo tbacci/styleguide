@@ -1,0 +1,41 @@
+/* scss/readme/_settings.scss */
+/* scss/readme/_sidebars.scss */
+/* scss/modules/_box.scss */
+.box {
+  background: #eee;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
+}
+
+/* scss/modules/_Button.scss */
+.btn {
+  background: #62947e;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background .3s linear;
+}
+
+.btn:hover {
+  background: #7dbca0;
+}
+
+/* scss/jsExample/_clickme.scss */
+.click {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  transition: left .25s;
+  background: #ccf9bf;
+  padding: 20px 40px;
+  display: inline-block;
+}
+
+.clickAnimate {
+  left: 80%;
+}
+

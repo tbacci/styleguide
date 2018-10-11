@@ -1,0 +1,25 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "Atomic Docs is a front end style guide generator and component manager. Atomic Docs is built in PHP and Sass. Inspired by Brad Frost's Atomic Design principles.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-manifest-plugin": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack -w --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

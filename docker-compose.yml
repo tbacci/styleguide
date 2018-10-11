@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    image: nginx:1
+    ports:
+    - "80:80"
+    volumes:
+      - .:/var/www/app
+      - ./docker/conf/nginx/site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+  php:
+    image: php:7.2-fpm
+    volumes:
+      - .:/var/www/app
+
+  nodejs:
+      build:
+        context: .
+        dockerfile: ./docker/node/Dockerfile
+      command: ./docker/node/command.sh
+      volumes:
+        - .:/usr/src/app
+        - ./node_modules:/usr/src/app/node_modules
+      links:
+        - web:web

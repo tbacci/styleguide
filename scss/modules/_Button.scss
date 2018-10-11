@@ -1,0 +1,17 @@
+/* scss/modules/_Button.scss */
+
+.btn{
+  background: #62947e;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background .3s linear;
+
+
+  &:hover{
+    background: #7dbca0;
+  }
+}
